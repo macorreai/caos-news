@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CAOS NEWS</title>
+    <link rel="shortcut icon" href="imagenes/logoarriba.png">
+</head>
+
+<body>
+    <div class="contenedor">
+
+
+
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes/Logo.png" alt="caos-news" width="30" height="24" class="d-inline-block align-text-top">
+                    Caos News
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticiasDestacadas">Destacadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#categorias">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contadorNoticia">Contador Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="categoria o periodista"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar noticia</button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar sesion</a>
+                            <p>aun no inicias sesion</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!--Fin  menu -->
+
+
+
+        <!-- carrousel -->
+
+        <div id="noticiasDestacadas" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="noticiaBono.html">
+                        <img src="imagenes/noticias/bono.jpg" height="500px" class="d-block w-100" alt="noticia-">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Titulo representativo de la noticia</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="noticiaCovid.html">
+                        <img src="imagenes/noticias/covid.jpg" height="500px" class="d-block w-100" alt="noticia-">
+
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Titulo representativo de la noticia</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="noticiaSpacex.html">
+                        <img src="imagenes/noticias/spacex.jpg" height="500px" class="d-block w-100" alt="noticia-">
+                    </a>
+                    
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Titulo representativo de la noticia</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#noticiasDestacadas"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#noticiasDestacadas"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- carrousel -->
+
+
+        <!-- Categoria de noticias -->
+
+        <div class="tituloSeccion" id="categorias">
+            <h1>Categorias</h1>
+        </div>
+        <div class="categorias">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                    <div class="card">
+                        <img src="imagenes/categorias/Mundialjpg.jpg" alt="Catgeroia-1" style="width:100%">
+                        <h1>Categoria 1</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p><button>Ir a la seccion</button></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                    <div class="card">
+                        <img src="imagenes/categorias/Mundialjpg.jpg" alt="Catgeroia-2" style="width:100%">
+                        <h1>Categoria 2</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p><button>Ir a la seccion</button></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                    <div class="card">
+                        <img src="imagenes/categorias/Mundialjpg.jpg" alt="Catgeroia-3" style="width:100%">
+                        <h1>Periodista 1</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p><button>Ir a la seccion</button></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                    <div class="card">
+                        <img src="imagenes/categorias/Mundialjpg.jpg" alt="Categoria-4" style="width:100%">
+                        <h1>Periodista 2</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p><button>Ir a la seccion</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Fin categoria -->
+
+        <!-- Inicio contador de noticia-->
+        <div class="contadorNoticia col" id="contadorNoticia">
+            <h4 style="align-items: center;">NOTICIAS SUBIDAS AL SITIO </h4>
+        </div>
+        <div class="contadorNoticiaNum col">
+            <h4 style="align-items: center;"> 3 </h4>
+        </div>
+
+        <!-- Fin categoria -->
+
+        <!-- Inicio contacto -->
+        <div class="contacto">
+            <div class="tituloSeccion" id="contacto">
+                <h1>Contacto</h1>
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Su correo electronico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@correo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Deje su mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Contactanos!</button>
+              </div>
+
+        </div>
+        
+        <!-- Fin contacto -->
+
+    </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
