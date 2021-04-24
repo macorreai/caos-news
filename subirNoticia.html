@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Subir noticia</title>
+    <link rel="shortcut icon" href="imagenes/logoarriba.png">
+
+</head>
+
+<body>
+    <div class="contenedor">
+
+
+
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/Logo.png" alt="caos-news" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Caos News
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html #noticiasDestacadas">Destacadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html #categorias">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html #contadorNoticia">Contador Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html #contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="subirNoticia.html">Sube tu noticia!</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="categoria o periodista"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar noticia</button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Iniciar sesion</a>
+                            <p>aun no inicias sesion</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!--Fin  menu -->
+
+        <!-- Subir noticia -->
+        <div class="subirNoticia">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Pon aqui el titulo de tu noticia">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Autor</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Pon aqui tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Lugar</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="El luar donde ocurrieron los hechos">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Fecha de publicacion</span>
+                <input type="text" aria-label="First name" class="form-control" placeholder="dia">
+                <input type="text" aria-label="Last name" class="form-control" placeholder="mes">
+                <input type="text" aria-label="Last name" class="form-control" placeholder="año">
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Aqui escribe tu noticia</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <label for="exampleColorInput" class="form-label">Elegir el color de fondo de tu noticia</label>
+            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+                title="Elige el color">
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Seleccionar las imagenes a subir</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="categoriasChek">
+                <label for="exampleColorInput" class="form-label">Seleccina la categoria</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Categoria 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <h1></h1>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Categoria 2
+                    </label>
+                
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="index.html">
+                        <button class="btn btn-primary" type="button">Mandar a revision la noticia!</button>
+                    </a>
+                  </div>
+            </div>
+
+        </div>
+
+
+        <!-- fin de subir noticia -->
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -46,6 +46,10 @@ body{
         margin-left: 20px;
     }
 }
+.subirNoticia{
+
+    padding: 12px;
+}
 #imgNoticia{
     display: flex;
     justify-content: center;
