@@ -302,7 +302,7 @@
                 navigator.geolocation.getCurrentPosition(function (position) {
                     latitud = position.coords.latitude;
                     longitud = position.coords.longitude;
-                    $.get("http://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=ee891ef21ad277b897d397395cc3813e&units=metric&lang=es", function (data) {
+                    $.get("https://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=ee891ef21ad277b897d397395cc3813e&units=metric&lang=es", function (data) {
                         $("#pais").append(data.name + ", " + data.sys.country);
                         $("#imagen").append("<img src='http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png'>");
                         $("#temp").append(data.main.temp + "°C");
