@@ -25,7 +25,7 @@
 
 
 
-        
+
     <div class="contenedor">
         <!-- Menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -75,22 +75,28 @@
         </nav>
         <!--Fin  menu -->
 
- 
 
-        <div class="tituloSeccion" >
+
+        <div class="tituloSeccion2">
             <h5>El clima en tu ciudad</h5>
         </div>
-            
-         
-
-
         <div class="clima">
-
             <div class="col" id="pais"></div>
             <div class="col" id="temp"></div>
             <div class="col" id="imagen"></div>
             <div class="col" id="clima"></div>
-           
+        </div>
+
+        
+        <div class="tituloSeccion2">
+            <h5>Divisas</h5>
+        </div>
+
+        <div class="row" id="divisas">
+            <div class="col" id="dolar"></div>
+            <div class="col" id="euro"></div>
+            <div class="col" id="uf"></div>
+            <div class="col" id="utm"></div>
         </div>
 
 
@@ -189,10 +195,10 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
-    
+
         <!-- Categoria de noticias -->
 
         <div class="tituloSeccion" id="categorias">
@@ -285,10 +291,10 @@
             <div class="footer-copyright text-center py-3">
                 <img src="imagenes/logoarriba.png" alt="">
                 © 2021 Copyright:
-                
+
                 <a href="#"> CAOS NEWS</a>
                 <img src="imagenes/logoarriba.png" alt="">
-                
+
             </div>
             <!-- Copyright -->
         </footer>
@@ -296,22 +302,31 @@
     </div>
     </div>
 
-    <script> 
-            d = document.getElementById("demo");
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    latitud = position.coords.latitude;
-                    longitud = position.coords.longitude;
-                    $.get("https://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=ee891ef21ad277b897d397395cc3813e&units=metric&lang=es", function (data) {
-                        $("#pais").append(data.name + ", " + data.sys.country);
-                        $("#imagen").append("<img src='http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png'>");
-                        $("#temp").append(data.main.temp + "°C");
-                        $("#clima").append(data.weather[0].description);
-                    });
+    <script>
+        d = document.getElementById("demo");
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                latitud = position.coords.latitude;
+                longitud = position.coords.longitude;
+                $.get("https://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=ee891ef21ad277b897d397395cc3813e&units=metric&lang=es", function (data) {
+                    $("#pais").append(data.name + ", " + data.sys.country);
+                    $("#imagen").append("<img src='http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png'>");
+                    $("#temp").append(data.main.temp + "°C");
+                    $("#clima").append(data.weather[0].description);
                 });
-            }
-        
+            });
+        }
 
+        $.getJSON('https://mindicador.cl/api', function (data) {
+            var dailyIndicators = data;
+            $("#dolar").append("Dolar $"+ dailyIndicators.dolar.valor);
+            $("#euro").append("Euro $"+ dailyIndicators.euro.valor);
+            $("#uf").append("UF $"+ dailyIndicators.uf.valor);
+            $("#utm").append("UTM $"+ dailyIndicators.utm.valor);
+
+        }).fail(function () {
+            console.log('Error al consumir la API!');
+        });
     </script>
 
 
