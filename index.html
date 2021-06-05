@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,15 +13,26 @@
 </head>
 
 <body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+
+        
     <div class="contenedor">
-
-
-
         <!-- Menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="imagenes/Logo.png" alt="caos-news" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="imagenes/Logo.png" alt="caos-news" width="30" height="24"
+                        class="d-inline-block align-text-top">
                     Caos News
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -64,6 +75,35 @@
         </nav>
         <!--Fin  menu -->
 
+ 
+
+        <div class="tituloClima">
+            <div class="row">
+                <div class="col-12" id="tituloClimaTexto">
+                    <h5>El clima en tu ciudad</h5>
+                    <button type="button" id="botonClima" onclick="verClima()" class="btn btn-info">ver clima</button>
+                </div>
+
+            </div>
+            
+            
+            </h1>
+
+        </div>
+
+        <div class="clima">
+
+            <div class="col" id="pais"></div>
+            <div class="col" id="temp"></div>
+            <div class="col" id="imagen"></div>
+            <div class="col" id="clima"></div>
+           
+        </div>
+
+
+
+        <div id="demo"></div>
+
 
 
         <!-- carrousel -->
@@ -91,7 +131,7 @@
                     <a href="noticiaSpacex.html">
                         <img src="imagenes/noticias/spacex.jpg" height="500px" class="d-block w-100" alt="noticia-">
                     </a>
-                    
+
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Titulo representativo de la noticia</h2>
                     </div>
@@ -115,7 +155,7 @@
         <!-- Categoria de noticias -->
 
         <div class="tituloSeccion" id="categorias">
-            <h1>Categorias</h1>
+            <h1>Noticias por categoria</h1>
         </div>
         <div class="categorias">
             <div class="row">
@@ -140,7 +180,7 @@
                 <div class="col-6 col-sm-6 col-md-3 col-xl-3">
                     <div class="card">
                         <img src="imagenes/categorias/Mundialjpg.jpg" alt="Catgeroia-3" style="width:100%">
-                        <h1>Periodista 1</h1>
+                        <h1>Categoria 3</h1>
                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
                         <p>Lorem, ipsum dolor.</p>
                         <p><button>Ir a la seccion</button></p>
@@ -149,7 +189,55 @@
                 <div class="col-6 col-sm-6 col-md-3 col-xl-3">
                     <div class="card">
                         <img src="imagenes/categorias/Mundialjpg.jpg" alt="Categoria-4" style="width:100%">
+                        <h1>Categoria 4</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p><button>Ir a la seccion</button></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    
+        <!-- Categoria de noticias -->
+
+        <div class="tituloSeccion" id="categorias">
+            <h1>Noticias por periodista</h1>
+        </div>
+        <div class="categorias">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                    <div class="card">
+                        <img src="imagenes/categorias/periodista.png" alt="Catgeroia-1" style="width:100%">
+                        <h1>Periodista 1</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p><button>Ir a la seccion</button></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                    <div class="card">
+                        <img src="imagenes/categorias/periodista.png" alt="Catgeroia-2" style="width:100%">
                         <h1>Periodista 2</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p><button>Ir a la seccion</button></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                    <div class="card">
+                        <img src="imagenes/categorias/periodista.png" alt="Catgeroia-3" style="width:100%">
+                        <h1>Periodista 3</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p><button>Ir a la seccion</button></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                    <div class="card">
+                        <img src="imagenes/categorias/periodista.png" alt="Categoria-4" style="width:100%">
+                        <h1>Periodista 4</h1>
                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</p>
                         <p>Lorem, ipsum dolor.</p>
                         <p><button>Ir a la seccion</button></p>
@@ -157,6 +245,7 @@
                 </div>
             </div>
         </div>
+
 
         <!--Fin categoria -->
 
@@ -171,40 +260,104 @@
         <!-- Fin categoria -->
 
         <!-- Inicio contacto -->
-        <div class="contacto">
-            <div class="tituloSeccion" id="contacto">
-                <h1>Contacto</h1>
-            </div>
-            
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Su correo electronico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@correo.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Deje su mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="button">Contactanos!</button>
-              </div>
-
+        <div class="tituloSeccion" id="contacto">
+            <h1>Contactanos</h1>
         </div>
-        
+
+        <form action="#" id="formularioContacto">
+            <div class="form-group">
+                <label for="correoCont" class="form-label">Correo Electronico:</label>
+                <input type="text" name="correoCont" id="correoCont" class="form-control"
+                    placeholder="correo@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="mensajeCont" class="form-label">Dejenos su opinion / sugerencias:</label>
+                <input type="text" name="mensajeCont" id="mensajeCont" class="form-control"
+                    placeholder="Estaremos atentos a sus comentarios. (max 120 caracteres)">
+            </div>
+            <div class="enviar">
+                <button type="submit" class="btn btn-info">Enviar</button>
+            </div>
+        </form>
+
+
         <!-- Fin contacto -->
 
-        
+        <br>
 
+        <!-- Footer -->
+        <footer class="page-footer font-small red">
 
-        
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                <img src="imagenes/logoarriba.png" alt="">
+                © 2021 Copyright:
+                
+                <a href="#"> CAOS NEWS</a>
+                <img src="imagenes/logoarriba.png" alt="">
+                
+            </div>
+            <!-- Copyright -->
+        </footer>
 
     </div>
     </div>
 
+    <script>
+        function verClima() {
+            let botonClima = document.querySelector("#botonClima");
+            botonClima.disabled = true;
+            d = document.getElementById("demo");
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    latitud = position.coords.latitude;
+                    longitud = position.coords.longitude;
+                    $.get("http://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=2581f6487081d8ee37c38e25428ce588&units=metric&lang=es", function (data) {
+                        $("#pais").append(data.name + ", " + data.sys.country);
+                        $("#imagen").append("<img src='http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png'>");
+                        $("#temp").append(data.main.temp + "°C");
+                        $("#clima").append(data.weather[0].description);
+                    });
+                });
+            }
+        }
+
+    </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#formularioContacto").validate({
+                rules: {
+                    mensajeCont: {
+                        required: true,
+                        minlength: 5,
+                        maxlength: 120
+                    },
+                    correoCont: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    mensajeCont: {
+                        required: "Por favor escriba su mensaje (max 120 caracteres).",
+                        minlength: "Ingrese al menos 5 caracteres en su mensaje.",
+                        maxlength: "Maximo 120 caracteres"
+                    },
+                    correoCont: {
+                        required: "Por favor ingrese una direccion de correo electronico.",
+                        email: "Debe ingresar un correo electronico valido."
+                    }
+                }
+            });
+        });
+    </script>
+
+
 </body>
+
+
 
 </html>

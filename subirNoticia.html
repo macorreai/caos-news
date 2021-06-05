@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,130 +14,179 @@
 </head>
 
 <body>
-    <div class="contenedor">
-
-
-
-        <!-- Menu -->
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="imagenes/Logo.png" alt="caos-news" width="30" height="24" class="d-inline-block align-text-top">
-                Caos News
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#noticiasDestacadas">Destacadas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#categorias">Categorias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contadorNoticia">Contador Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contacto">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="subirNoticia.html">Sube tu noticia!</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="categoria o periodista"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar noticia</button>
-                </form>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Iniciar sesion</a>
-                        <p>aun no inicias sesion</p>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-    <!--Fin  menu -->
-
-
-        <!-- Subir noticia -->
-        <div class="subirNoticia">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Titulo</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="Pon aqui el titulo de tu noticia">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Autor</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="Pon aqui tu nombre">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Lugar</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="El luar donde ocurrieron los hechos">
-            </div>
-            <div class="input-group">
-                <span class="input-group-text">Fecha de publicacion</span>
-                <input type="text" aria-label="First name" class="form-control" placeholder="dia">
-                <input type="text" aria-label="Last name" class="form-control" placeholder="mes">
-                <input type="text" aria-label="Last name" class="form-control" placeholder="año">
-            </div>
-            
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Aqui escribe tu noticia</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <label for="exampleColorInput" class="form-label">Elegir el color de fondo de tu noticia</label>
-            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
-                title="Elige el color">
-            <div class="mb-3">
-                <label for="formFile" class="form-label">Seleccionar las imagenes a subir</label>
-                <input class="form-control" type="file" id="formFile">
-            </div>
-            <div class="categoriasChek">
-                <label for="exampleColorInput" class="form-label">Seleccina la categoria</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Categoria 1
-                    </label>
-                </div>
-                <div class="form-check">
-                    <h1></h1>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Categoria 2
-                    </label>
-                
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <a href="index.html">
-                        <button class="btn btn-primary" type="button">Mandar a revision la noticia!</button>
-                    </a>
-                  </div>
-            </div>
-
-        </div>
-
-
-        <!-- fin de subir noticia -->
-    </div>
-    </div>
-
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+
+    <div class="contenedor">
+
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/Logo.png" alt="caos-news" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Caos News
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#noticiasDestacadas">Destacadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#categorias">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contadorNoticia">Contador Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="subirNoticia.html">Sube tu noticia!</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="categoria o periodista"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar noticia</button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar sesion</a>
+                            <p>aun no inicias sesion</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!--Fin  menu -->
+
+
+        <br>
+        <!-- Subir noticia -->
+
+        <form action="#" id="subirNoticiaForm">
+            <div class="form-group">
+                <label for="tituloNoticia" class="form-label">Titulo de la noticia</label>
+                <input type="text" name="tituloNoticia" id="tituloNoticia" class="form-control"
+                    placeholder="Ingrese el titulo de su noticia">
+                    
+            </div>
+            <div class="form-group">
+                <label for="autorNoticia" class="form-label">Autor</label>
+                <input type="text" name="autorNoticia" id="autorNoticia" class="form-control"
+                    placeholder="Ingrese el nombre del autor de la noticia">
+            </div>
+            <div class="form-group">
+                <label for="lugarNoticia" class="form-label">Lugar de lo ocurrido</label>
+                <input type="text" name="lugarNoticia" id="lugarNoticia" class="form-control"
+                    placeholder="Ingrese el lugar donde ocurren los hechos">
+            </div>
+            <div class="form-group">
+                <label for="fechaNoticia" class="form-label">Fecha de la noticia</label>
+                <input type="date" name="fechaNoticia" id="fechaNoticia" class="form-control"
+                    >
+            </div>
+            <div class="form-group">
+                <label for="cuerpoNoticia" class="form-label">Cuerpo de la noticia</label>
+                <input type="text" name="cuerpoNoticia" id="cuerpoNoticia" class="form-control"
+                    placeholder="Escriba su noticia">
+            </div>
+            <div class="form-group">
+                <label for="imagenNoticia" class="form-label">Suba su imagen</label>
+                <input type="file" name="imagenNoticia" id="imagenNoticia" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="colorNoticia" class="form-label">Seleccione el color de fondo de su noticia</label>
+                <input type="color" name="colorNoticia" id="colorNoticia" class="form-control">
+            </div>
+            <div class="enviar">
+                <button type="submit" class="btn btn-info">Mandar la noticia a revision!</button>
+            </div>
+        </form>
+
+
+        <!-- fin de subir noticia -->
+        <br>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small red">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="#"> CAOS NEWS</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            $("#subirNoticiaForm").validate({
+                rules: {
+                    tituloNoticia: {
+                        required: true,
+                        minlength: 3
+                    },
+                    autorNoticia: {
+                        required: true
+                    },
+                    lugarNoticia: {
+                        required: true
+                    },
+                    imagenNoticia: {
+                        required: true
+                    },
+                    fechaNoticia: {
+                        required: true
+                    },
+                    cuerpoNoticia: {
+                        required: true
+                    }
+                },
+                messages: {
+                    tituloNoticia: {
+                        required: "Debe agregarle un titulo a su noticia",
+                        minlength :"Debe elegir un titulo más largo"
+
+                    },
+                    autorNoticia: {
+                        required: "Debes agregar quien es autor de la noticia",
+
+                    },
+                    lugarNoticia: {
+                        required: "Debes agregar el lugar en donde ocurrio la noticia",
+
+                    },
+                    imagenNoticia: {
+                        required: "Debes subir por lo menos una foto"
+
+                    },
+                    fechaNoticia: {
+                        required: "Debes ingresar la fecha de lo sucedido"
+                    },
+                    cuerpoNoticia:{
+                        required: "No puedes dejar vacio el cuerpo de la noticia"
+                    }
+                }
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

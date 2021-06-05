@@ -3,15 +3,18 @@
     display: flex;
     justify-content: center;
     text-transform: capitalize;
+    
 }
 .nav-item>p:hover{
     color: red; 
 }
 
 body{
-    background-color: rgb(159, 208, 238);
     display: flex;
     justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(333deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
 }
 
 .contenedor{
@@ -46,8 +49,21 @@ body{
         margin-left: 20px;
     }
 }
+@media(max-width: 620px){
+  #pais{
+      
+       margin-right: 5px;
+  }
+  #temp{
+      margin-left: 5px;
+  }
+  #clima{
+      margin-right: 5px;
+  }
+    
+ 
+}
 .subirNoticia{
-
     padding: 12px;
 }
 #imgNoticia{
@@ -60,6 +76,18 @@ body{
     color: black;
     justify-content: center;    
     text-transform: capitalize;
+    font-weight: 300;
+    margin-top: 30px;
+    padding: 12px;
+    
+}
+.tituloClima{
+    background-color: rgb(221, 220, 219);
+    display: flex;
+    color: black;
+    justify-content: center;    
+    text-transform: capitalize;
+
     font-weight: 300;
     margin-top: 30px;
     padding: 12px;
@@ -116,3 +144,77 @@ body{
   .card button:hover {
     opacity: 0.7;
   }
+
+  .num{
+      font-size: 3em;
+      font-family: 'arial';
+      border: 5px solid #fff;
+      align-items: center;
+  }
+.footer-copyright{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border: solid 2px thin;
+    color: rgba(255, 255, 255, 0.74);
+}
+.footer-copyright>a{
+    color: white;
+}
+.enviar{
+    justify-content: center;
+    display: flex;
+}
+
+
+label.error{
+    color: red;
+    font-style: italic;
+    line-height: 50px;
+}
+input.error{
+    border-color: red;
+}
+
+input.error:focus{
+    border-color: red;
+    box-shadow: 0 0 0 0.25rem rgb(255 0 0 / 25%);
+}
+.clima{
+    background: rgb(174,188,238);
+    background: radial-gradient(circle, rgba(174,188,238,1) 0%, rgba(15,6,200,1) 100%);
+    display: flex;
+    align-items: center;
+    
+}
+#pais {
+    font-size: 1.1em;
+    font-weight: bold;
+    left: 50px;
+    color: white;
+}
+
+#imagen>img {
+    width: 70px;
+}
+
+#temp {
+    color: white;
+    font-size: 1.2em;
+    left: 20px;
+}
+
+#clima {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.1em;
+}
+#tituloClimaTexto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#botonClima{
+   margin-left: 2px;
+}
