@@ -77,19 +77,12 @@
 
  
 
-        <div class="tituloClima">
-            <div class="row">
-                <div class="col-12" id="tituloClimaTexto">
-                    <h5>El clima en tu ciudad</h5>
-                    <button type="button" id="botonClima" onclick="verClima()" class="btn btn-info">ver clima</button>
-                </div>
-
-            </div>
-            
-            
-            </h1>
-
+        <div class="tituloSeccion" >
+            <h5>El clima en tu ciudad</h5>
         </div>
+            
+         
+
 
         <div class="clima">
 
@@ -303,16 +296,13 @@
     </div>
     </div>
 
-    <script>
-        function verClima() {
-            let botonClima = document.querySelector("#botonClima");
-            botonClima.disabled = true;
+    <script> 
             d = document.getElementById("demo");
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function (position) {
                     latitud = position.coords.latitude;
                     longitud = position.coords.longitude;
-                    $.get("http://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=2581f6487081d8ee37c38e25428ce588&units=metric&lang=es", function (data) {
+                    $.get("http://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=ee891ef21ad277b897d397395cc3813e&units=metric&lang=es", function (data) {
                         $("#pais").append(data.name + ", " + data.sys.country);
                         $("#imagen").append("<img src='http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png'>");
                         $("#temp").append(data.main.temp + "°C");
@@ -320,7 +310,7 @@
                     });
                 });
             }
-        }
+        
 
     </script>
 
